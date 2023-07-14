@@ -1,7 +1,7 @@
 const API_KEY = "d4d9e9fb04704dfdbf4789437a7feb79";
 const url = "https://newsapi.org/v2/everything?q=";
 
-window.addEventListener('load', ()=> fetchNews("India"));
+window.addEventListener('load', ()=> fetchNews("latest"));
 
 let fetchNews = async(query) =>{
   const res = await fetch(`${url}${query}&apiKey=${API_KEY}`)
